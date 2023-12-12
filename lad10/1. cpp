@@ -1,0 +1,14 @@
+#include <iostream>
+#include <vector>
+
+/*функция push_back(), в которую передается добавляемый элемент*/
+
+int main()
+{
+    std::vector<int> numbers;     // пустой вектор
+    numbers.push_back(5);
+    numbers.push_back(3);
+    numbers.push_back(10);
+    for (int n : numbers)
+        std::cout << n << "\t";      // 5    3   10
+}
