@@ -29,17 +29,17 @@ int main()
 			pos = i;
 		}
 	}
-	for (int i = 0; i < n; i++)
-		for (int j = 0; j < n; j++)
-			if (i == pos) matrix[i][j] += 1;
-
 
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; j < n; j++)
+		{
+			if (i == pos) matrix[i][j] += 1;
 			std::cout << matrix[i][j] << " ";
+		}
 		std::cout << std::endl;
 	}
+
 
 	for (int i = 0; i < n; i++) 
 		delete[] matrix[i];
